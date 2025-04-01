@@ -1,83 +1,53 @@
-/* Global Styles */
 html, body {
     height: 100%;
     background-color: #3c415e;
-    margin: 0;
-    font-family: Arial, sans-serif;
 }
 
-/* Main container */
 #master {
     height: 75%;
+    vertical-align: baseline;
     padding-top: 10%;
-    border-radius: 5px;
-    border: 2px white ridge;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-/* Root container */
 #root {
     height: 100%;
 }
 
-/* Heading */
-.heading, .subheading {
+.heading {
     color: white;
     text-align: center;
-}
-
-.heading {
     position: relative;
     top: -15%;
 }
 
-/* Button Styles */
+.holder {
+    display: flex;
+    margin: auto;
+    width: fit-content;
+}
+
 button {
     padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     font-size: 16px;
     margin: 14px 12px;
     cursor: pointer;
     border-radius: 4px;
-    border: none;
-    font-weight: bold;
 }
 
 .btn-blue {
-    background-color: rgb(34, 193, 195);
+    background: rgb(34, 193, 195);
     color: black;
 }
 
 .btn-orange {
-    background-color: rgb(221, 112, 18);
+    background: rgb(221, 112, 18);
     color: black;
 }
 
 .btn-green {
-    background-color: rgb(44, 209, 88);
+    background: rgb(44, 209, 88);
     color: black;
-}
-
-/* Layout adjustments */
-.row {
-    display: flex;
-    gap: 10px;
-    margin: 10px 0;
-}
-
-/* Box selection */
-.fix-box {
-    width: 250px;
-    height: 250px;
-    margin: 20px;
-    border: 1px white dotted;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-weight: bold;
-    color: white;
 }

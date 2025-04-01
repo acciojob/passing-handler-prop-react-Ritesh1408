@@ -1,18 +1,28 @@
+import React from "react";
+import { useState } from "react";
 
-import React, { useState } from "react";
-
-const Selection = ({ applyColor }) => {
-  const [style, setStyle] = useState({ background: "" });
-
+function Selection({ ele, applyColor }) {
+  const [color, setColor] = useState("");
+  function clickHandler() {
+    applyColor(setColor);
+  }
   return (
     <div
-      className="fix-box"
-      style={style}
-      onClick={() => applyColor(setStyle)}
+      onClick={clickHandler}
+      style={{
+        width: "200px",
+        height: "200px",
+        border: "1px solid black",
+        backgroundColor: `${color}`,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        fontSize: "19px",
+        fontWeight: "bold",
+      }}
     >
       Selection
     </div>
   );
-};
-
+}
 export default Selection;
